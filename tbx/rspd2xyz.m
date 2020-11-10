@@ -63,9 +63,9 @@ L = matching_fcns.lambda;
 x = matching_fcns.x;
 y = matching_fcns.y;
 z = matching_fcns.z;
-x = x/(100*sum(x));
-y = y/(100*sum(y));
-z = z/(100*sum(z));
+x = x/(sum(x));
+y = y/(sum(y));
+z = z/(sum(z));
 
 % Perform a simple numerical integration.
 XYZ = sum(fI(L) .* fR(L) .* [x y z],1);
